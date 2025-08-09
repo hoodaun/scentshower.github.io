@@ -1,106 +1,119 @@
 <!-- trigger rebuild -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scent Shower</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: Arial, sans-serif;
+            background-color: #f8f4fb;
         }
-        <header>
-    <img src="My%20logo.png" alt="Scent Shower Logo" width="200" style="display:block;margin:0 auto;">
-    <h1>Scent Shower</h1>
-    <p>Your trusted source for premium fragrances</p>
-</header>
-
-            margin: 1;
-            font-size: 2.5em;
+        header {
+            background: linear-gradient(135deg, #6a1b9a, #9c27b0);
+            padding: 20px 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+        header img {
+            width: 180px;
+            height: auto;
+        }
+        header h1 {
+            color: white;
+            margin: 5px 0 3px;
+            font-size: 34px;
+            font-weight: bold;
+        }
+        header p {
+            color: #f0e5f9;
+            font-size: 16px;
+            margin: 0;
         }
         nav {
-            background: #4a3a73;
-            display: flex;
-            justify-content: center;
-            padding: 0.5em;
+            background-color: #5a1480;
+            text-align: center;
+            padding: 10px;
+            margin-top: 220px; /* space for bigger logo */
+            position: sticky;
+            top: 180px;
+            z-index: 900;
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            padding: 10px 15px;
             font-weight: bold;
         }
         nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        footer {
-            background: #4a3a73;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            margin-top: 20px;
-        }
-        .cta-button {
-            display: inline-block;
-            background: #6a4e99;
-            color: white;
-            padding: 10px 20px;
-            margin-top: 20px;
-            text-decoration: none;
+            background-color: #7b1fa2;
             border-radius: 5px;
         }
-        .cta-button:hover {
-            background: #5a3d88;
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #4a148c;
+        }
+        button {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #7b1fa2;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Scent Shower</h1>
-        <p>Your trusted source for premium fragrances</p>
-    </header>
- <img src="My logo.png" alt="Scent Shower Logo" width="100" style="display:block;margin:0 auto;">
-    <nav>
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
-    </nav>
 
-    <div class="container">
-        <section id="about">
-            <h2>About Us</h2>
-            <p>At Scent Shower, we specialize in high-quality perfumes and fragrances designed to leave a lasting impression. We are committed to offering unique scents that inspire confidence and elegance.</p>
-        </section>
+<header>
+    <img src="My%20logo.png" alt="Scent Shower Logo">
+    <h1>Scent Shower</h1>
+    <p>Your trusted source for premium fragrances</p>
+</header>
 
-        <section id="products">
-            <h2>Our Products</h2>
-            <p>Explore our exclusive collection of fragrances crafted for every occasion. From light floral tones to deep woody notes, we have something for everyone.</p>
-        </section>
+<nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:info@scentshower.com">info@scentshower.com</a></p>
-            <p>Phone: +92 3150517107</p>
-            <a href="mailto:info@scentshower.com" class="cta-button">Send an Inquiry</a>
-        </section>
-    </div>
+<main>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Scent Shower, we specialize in high-quality perfumes and fragrances designed to leave a lasting impression. We are committed to offering unique scents that inspire confidence and elegance.</p>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Scent Shower. All Rights Reserved.</p>
-    </footer>
+    <section id="products">
+        <h2>Our Products</h2>
+        <p>Explore our exclusive collection of fragrances crafted for every occasion. From light floral tones to deep woody notes, we have something for everyone.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:info@scentshower.com">info@scentshower.com</a></p>
+        <p>Phone: +92 3150517107</p>
+        <button>Send an Inquiry</button>
+    </section>
+</main>
+
 </body>
 </html>
+
 
 
 
